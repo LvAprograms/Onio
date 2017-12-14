@@ -97,6 +97,7 @@ class Player(object):
 
             logging.debug('attempted play is valid!')
             self.update(card_to_play)
+            logging.debug('Je bent een geit')
         else:
             logging.error('Attempted play is not allowed. colour on colour or value on value!')
             print(card_to_play.check_play(self.game.playstack.topcard))
